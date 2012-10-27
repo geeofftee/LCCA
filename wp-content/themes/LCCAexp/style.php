@@ -1,13 +1,13 @@
 
 <?php
 /*
-Template Name: About
+Template Name: Styles 
 */
 
 
 get_header(); ?>
 
-    <section class="row about">
+    <section class="row style">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>  
                 <?php the_content(); ?>

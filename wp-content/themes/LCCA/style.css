@@ -9,11 +9,23 @@ Version: 1.0
 /* -----------------------------------------
    Shared Styles
    ----------------------------------------- */
-   * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+   * { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+  }
 
    html { font-size: 100%; }
 
-   body { background: white; font-size: 0.875em; font-family: Helvetica, Arial, sans-serif; line-height: 1.5em; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
+   body { 
+    background: white;
+    font-size: 1em; 
+    font-family: Helvetica, Arial, sans-serif; 
+    line-height: 1.5em; 
+    color: #222222; 
+    position: relative; 
+    -webkit-font-smoothing: antialiased; 
+  }
 
    /* Links ---------------------- */
 
@@ -251,14 +263,49 @@ that IE7/8 do not support :nth-child.
 body {
   color: #333;
 }
+p {
+  margin: 1.5em 0;
+  font-size: 1em;
+}
+h1 {
+  font-size: 2.625em;
+  line-height: 1.286em;
+  margin: 1.286em 0 0.429em;
+}
+h2 {
+  font-size:1.625em;
+  line-height:1.385em;
+  margin: 1.385em 0;
+}
+h3 {
+  font-size:1.25em;
+  line-height:1.5em;
+  margin: 1.5em 0;
+}
+.small {
+  font-size: 0.813em;
+  line-height: 1.385em;
+  margin: 1.385em 0;
+}
+
+.section-name {
+  margin-top: 3em;
+  font-size:1.25em;
+  line-height:1.5em;
+}
+.latest-news article h1 {
+  color:#3b5b9c;
+  color: #333;
+}
+.banner h1 {
+  font-size:1.625em;
+  line-height:1.385em;
+  margin: 1.385em 0;
+}
 
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-p {
-  margin-bottom: 1.312em;
 }
 
 p.intro {
@@ -309,25 +356,28 @@ nav {
 .banner {
   padding: 5.248em 0;
   border-bottom: 1px solid #bdbdbd;
+  border-top: 1px solid #bdbdbd;
+  width: 100%;
 /*    border-right: 1px solid #bdbdbd;
 border-left: 1px solid #bdbdbd;*/
+}
+.banner .row {
+
+}
+
+.banner img {
+  float:left;
+  margin-right:3em;
 }
 
 .banner h1 {
   margin: 0;
   color:#333;
   color: #3b5b9c;
+  float: left;
 }
 .highlighted {
   color: #3b5b9c;
-}
-
-.latest-news h1 {
-  font-size: 1.5em;
-  line-height: 1em;
-  color:#3b5b9c;
-  color: #333;
-  margin-bottom: 1em;;
 }
 .latest-news-wrapper article{
   margin-left: 0!important;
@@ -337,58 +387,33 @@ border-left: 1px solid #bdbdbd;*/
 .contact-content {
   padding: 0;
 }
-
-h1 {
-  font-size: 2.5em;
-  line-height: 1.2em;
-  color: #333;
-  margin: 1.2em 0;
-}
-h2, .latest-news h1 {
-  font-size: 1.714em;
-  line-height: 1.143em;
-  color:#3b5b9c;
-  color: #333;
-  margin: 1.143em 0 0.857em;
-}
-.latest-news h1 {
-  margin-top: 0;
-}
 a h1 {
   color:#3b5b9c;
 }
-h1.section-name, p.intro {
-  font-size: 1.143em;
-  line-height: 1.5em;
-  margin: 0.6em 0 0; 
-  color: #333;
-}
-h1.section-name {
-  margin: 1.5em 0 1.5em;
-  text-transform: uppercase;
-  margin-top: 42px;
-}
+
 
 .intro-heading {
   margin-top: 0.6em;
 }
 
 .date {
-  font-size: 0.786em;
-  line-height: 1.909em;
-  margin-top: 1.909em 0;
   color: #999;
+  margin-top: 0;
 }
 .latest-news, .about, .contact, .members,.single-article {
   margin-bottom: 3em;
 }
 .latest-news article {
   margin-top: 3em;
-
 }
-
 .latest-news a:hover h1 {
   color: #ff8400;
+}
+.latest-news p {
+  margin-top: 0;
+}
+.home header {
+  border-bottom: none;
 }
 
 .single-article h1 {
