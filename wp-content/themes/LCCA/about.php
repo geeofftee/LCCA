@@ -15,3 +15,4 @@ get_header(); ?>
         <?php else : ?>
         <?php endif; ?>
     </section>
+<?php get_footer(); ?>

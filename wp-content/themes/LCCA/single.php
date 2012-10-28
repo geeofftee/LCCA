@@ -9,11 +9,11 @@
 
 get_header(); ?>
 	<article class="row single-article">
-		<div class="nine column centered">
+		<div class="eleven column centered">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <h1><?php the_title(); ?></h1> 
-            <p class="date"><?php the_date('F j, Y');?></p> 
+            <p class="date small"><?php the_date('F j, Y');?></p> 
             <?php the_content(); ?>
             <?php //comments_template( '', true ); ?>
         <?php endwhile; ?>
@@ -21,6 +21,4 @@ get_header(); ?>
     <?php endif; ?>
 	  </div>
   </article>
-
-
 <?php get_footer(); ?>

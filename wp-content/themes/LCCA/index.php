@@ -6,14 +6,17 @@ get_header(); ?>
 
 <section class="banner">
     <div class="row">
-        <img src="<?php bloginfo('template_directory'); ?>/images/computer.png" alt="Cloud Computer">
-        <h1 class="nine">We are the <span class="highlighted">Legal Cloud Computing Association</span>
-(LCCA), a consortium of leading cloud 
-computing providers.</h1>
+        <div class="eleven column centered">
+            <img class="banner-image" src="<?php bloginfo('template_directory'); ?>/images/cloud_computer.png" alt="Cloud Computer">
+            <h1 class="banner-text is-hidden">
+                We are the <span class="highlighted">Legal Cloud Computing Association</span>
+    (LCCA), a consortium of leading cloud 
+    computing providers.</h1>
+        </div>
     </div>
 </section>
 <div class="row">
-    <section class="latest-news content clear eleven column    centered">
+    <section class="latest-news content clear eleven column centered">
         <h1 class="section-name mobile-four">Latest News</h1>
 
         <?php if ( have_posts() ) : ?>
@@ -21,7 +24,7 @@ computing providers.</h1>
             <?php while ( have_posts() ) : the_post(); ?>
             <article>
                 <a href="<?php the_permalink();?>">
-                    <h1 class="blue"><?php the_title();?></h1>
+                    <h1 class="news-title"><?php the_title();?></h1>
                 </a>
                 <p class="date small"><?php the_date('F j, Y');?></p>
             <?php the_excerpt(); ?>
@@ -37,3 +40,4 @@ computing providers.</h1>
 </div>
 
 
+<?php get_footer(); ?>

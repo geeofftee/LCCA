@@ -72,9 +72,9 @@
 </head>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/script.js"></script>
-<body <?php body_class(); ?>>
+<body <?php body_class('dark'); ?>>
 	<header class="row">
-    <a href="<?php echo home_url('/');?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="LCCA logo" id="logo" width="428" height="148"></a>
+    <a href="<?php echo home_url('/');?>"><img src="<?php bloginfo('template_directory'); ?>/images/lcca_logo.png" alt="LCCA logo" id="logo" width="339" height="89"></a>
 		<nav id="access" role="navigation">
 			<?php $menuParameters = array(
 			  'container'       => false
