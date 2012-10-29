@@ -3,9 +3,8 @@ jQuery(document).ready(function($) {
   });
   setTimeout(function(){
     $('.banner-image').addClass('faded');
-      setTimeout(function(){
-        $('.banner-text').addClass('fadein');
-      }, 800);
-
+    setTimeout(function(){
+      $('.banner-text').addClass('faded-in').removeClass('is-hidden');
     }, 800);
-  });
+  }, 800);
+});

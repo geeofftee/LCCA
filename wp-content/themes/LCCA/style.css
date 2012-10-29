@@ -93,8 +93,8 @@ Version: 1.0
    .row .row.collapse { margin: 0; }
 
    .column, .columns { float: left; min-height: 1px; padding: 0 0 0 1.875em; position: relative; }
-   .column.centered, .columns.centered { float: none; margin: 0 auto; }
-   .latest-news .column {margin-top: 1.875em;}
+   .column.centered, .columns.centered { float: none; margin: 0 auto; padding: 0; }
+   /*.latest-news .column {margin-top: 1.875em;}*/
    .latest-news .column:nth-child(even) {padding: 0 1.875em 0 0; margin-top: 1.875em;}
 
    [class*="column"] + [class*="column"]:last-child { float: right; }
@@ -305,9 +305,9 @@ h3 {
   text-transform: uppercase;
 }
 .intro-heading {
-  font-size:1.625em;
+/*  font-size:1.625em;
   line-height:1.385em;
-  margin: 1.385em 0;
+  margin: 1.385em 0;*/
 }
 a {
   text-decoration: none;
@@ -366,21 +366,21 @@ nav {
   border-bottom: 1px solid #bdbdbd;
   border-top: 1px solid #bdbdbd;
   width: 100%;
-  color: #3b5b9c;
 }
 .banner-text{
   margin: 0!important;
   padding: 0;
   z-index: 3;
   position: relative;
-
+  color: #333;
   margin:0;
+  text-align: center;
 }
 .banner-text.is-hidden {
   visibility: visible;
   opacity: 0;
 }
-.banner-text.fadein {
+.banner-text.faded-in {
   -webkit-animation: 0.5s banner-opacity linear reverse;
   opacity: 1;
 }
@@ -398,6 +398,8 @@ nav {
   opacity: 0;
 }
 
+
+
 .dark .banner {
   background-color: #3b5b9c;
   color: #fff;
@@ -413,12 +415,15 @@ nav {
 .contact-content {
   padding: 0;
 }
-.news-title {
+.latest-news .news-title {
   color:#3b5b9c;
+  font-size:1.625em;
+  line-height:1.385em;
+  margin: 1.385em 0 0.462em;
   margin-top: 0;
 }
 
-.news-title:hover {
+.latest-news .news-title:hover {
   color: #ff8400;
 }
 .date {
@@ -440,6 +445,9 @@ nav {
 article:nth-child(1){
   margin-top: 0;
 } 
+.single-article {
+
+}
 .home header {
   border-bottom: none;
 }
@@ -458,6 +466,9 @@ article:nth-child(1){
   text-align: center;
   padding:0.625em 0.9375em 0.625em;
   margin-top: 3em;
+}
+.archives-title {
+  margin-top: 0;
 }
 .button {
   padding: 0.625em 2em 0.625em 2.6em;
@@ -558,17 +569,30 @@ input.error {
   border-bottom-right-radius: 0;
 }
 
+#test {
+  height: 0;
+  overflow-y:hidden;
+  transition: height 3s;
+  -webkit-transition: height 3s; 
+}
+
+#test.height {
+  height: auto;
+  transition: height 3s;
+  -webkit-transition: height 3s; 
+}
+
 
 
   @media only screen and (max-width: 767px) {
     .row {padding: 0 1.5em;}
-    header {text-align: center;/*border: none;*/padding-bottom: 20px;}
+    header {text-align: center;/*border: none;*/padding-bottom: 1.5em}
     #search {margin-top:20px;}
     .banner {padding: 2.5em;text-align: center;}
     .banner h1 {font-size: 1.8em;} 
     .banner img {margin-bottom: 2.5em} 
     #logo{margin: 0 auto; float: none;}
-    nav {top: 0; float: none; display: block; }
+    nav {float: none; display: block; position: relative; margin-top: 4em;text-align: center;}
     nav a { color: #333; font-size: 14px;}
     nav a:hover {color:#333; background-color:;}
     /*    nav a:nth-child(-n+3){border: none; margin: 0; margin-right: 10px;}*/

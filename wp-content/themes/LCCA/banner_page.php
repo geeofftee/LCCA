@@ -25,5 +25,14 @@ get_header(); ?>
   </div>
 </section>
 
+<?php global $post; // required
+$args = array(); // exclude category 9
+$custom_posts = get_posts($args);
+foreach($custom_posts as $post) : setup_postdata($post);?>
+<h1><?php the_title(); ?></h1>
+<?php the_content();
+endforeach;
+?>
+
 
 <?php get_footer(); ?>
