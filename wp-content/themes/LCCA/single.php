@@ -9,13 +9,14 @@
 
 get_header(); ?>
 	<article class="row single-article">
-		<div class="twelve column centered">
+		<div class="twelve column mobile-four">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <h1 class="news-title"><?php the_title(); ?></h1> 
             <p class="date small"><?php the_date('F j, Y');?></p> 
-            <?php the_content(); ?>
-            <?php //comments_template( '', true ); ?>
+            <div class="ten mobile-four">
+                <?php the_content(); ?>
+            </div>
         <?php endwhile; ?>
     <?php else : ?>
     <?php endif; ?>

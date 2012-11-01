@@ -8,16 +8,18 @@ Template Name: Members
 get_header(); ?>
 
 <section class="row members">
-  <?php if ( have_posts() ) : ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-      <h1 class="section-name"><?php the_title();?></h1>
-      <?php the_content(); ?>  
-      <?php endwhile; ?>
-  <?php else : ?>
-  <?php endif; ?> 
+    <div class="mobile-four twelve column">
+      <?php if ( have_posts() ) : ?>
+          <?php while ( have_posts() ) : the_post(); ?>
+          <h1 class="section-name"><?php the_title();?></h1>
+          <?php the_content(); ?>  
+          <?php endwhile; ?>
+      <?php else : ?>
+      <?php endif; ?> 
+    </div>
     
     <div class="row logos">
-        <div class="four left logos mobile-four">
+        <div class="four column logos mobile-four clio">
             <a target="_blank" href="http://www.goclio.com/">
                 <img src="<?php bloginfo('template_url');?>/images/clio.png" alt="Clio Logo" id="clio">
             </a>

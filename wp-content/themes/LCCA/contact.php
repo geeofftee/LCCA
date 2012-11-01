@@ -15,7 +15,7 @@ get_header(); ?>
         <?php endwhile; ?>
     <?php else : ?>
     <?php endif; ?> 
-      <form id="contact-form">
+      <form id="contact-form" method="post" action="<?php bloginfo('template_url');?>/contactengine.php">
         <label for="name">Name
           <input type="text" placeholder="Tell us your name" name="name" class="required" id="name">
         </label>
@@ -28,7 +28,7 @@ get_header(); ?>
         <label for="message">Message
           <textarea rows="10" placeholder="Type your message" name="message" id="message" class="required"></textarea>
         </label>
-        <button type="submit" class="button" id="send">Send</button>
+        <button type="submit" class="button" id="send" value="submit" name="submit">Send</button>
       </form>
   </div>
 </section>
