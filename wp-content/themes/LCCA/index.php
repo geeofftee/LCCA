@@ -4,7 +4,7 @@ Template Name: All posts
 */
 get_header(); ?>
 <div class="row">
-  <section class="latest-news content clear twelve column centered">
+  <section class="latest-news content clear twelve column mobile-four">
       <h1 class="section-name mobile-four">LCCA News</h1>
 
       <?php if ( have_posts() ) : ?>

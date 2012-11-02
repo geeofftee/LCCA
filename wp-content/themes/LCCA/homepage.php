@@ -24,7 +24,7 @@ get_header(); ?>
             $args = array('posts_per_page' => 4); // exclude category 9
             $custom_posts = get_posts($args);
             foreach($custom_posts as $post) : setup_postdata($post);?>
-            <article class="six column left mobile-four">
+            <article class="six column  mobile-four">
                 <a href="<?php the_permalink();?>">
                     <h1 class="news-title"><?php the_title();?></h1>
                 </a>

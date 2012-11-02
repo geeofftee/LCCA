@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
-  $("#contact-form").validate({
-  });
+  $("#contact-form").validate({});
   setTimeout(function(){
     $('.banner-text').addClass('faded-in').removeClass('is-hidden');
   }, 500);

@@ -7,7 +7,7 @@ Template Name: Latest News
 get_header(); ?>
 
 <section class="row latest-news content clear">
-    <div class="nine column centered latest-news-wrapper">
+    <div class="nine column latest-news-wrapper">
 		<h1 class="section-name mobile-four">Latest News</h1>
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
