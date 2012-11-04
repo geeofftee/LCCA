@@ -9,8 +9,7 @@ get_header(); ?>
     <div class="row">
         <div class="twelve column centered" style="text-align: centered;">
             <h1 class="banner-text is-hidden">
-                We are the <span class="highlighted">Legal Cloud Computing Association</span>
-    (LCCA), a consortium of leading cloud 
+                We are the <span class="highlighted">Legal Cloud Computing Association</span>, a consortium of leading cloud 
     computing providers.</h1>
         </div>
     </div>
@@ -30,7 +29,7 @@ get_header(); ?>
                 </a>
                 <p class="date small"><?php the_date('F j, Y');?></p>
             <?php the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>">Read more</a>
+            <a href="<?php the_permalink(); ?>" class="read-more">Read more</a>
             </article>
             <?php 
             endforeach;

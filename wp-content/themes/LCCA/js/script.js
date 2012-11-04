@@ -4,9 +4,12 @@ jQuery(document).ready(function($) {
     $('.banner-text').addClass('faded-in').removeClass('is-hidden');
   }, 500);
   $('.mobile-nav-button button').click(function(){
+    $('.overlay').addClass('nav-down');
     $('nav#access').removeClass('is-mobile-hidden').addClass('open-menu');
   });
   $('.mobile-nav-button.open-menu button').click(function(){
-    $('nav#access').removeClass('open-menu').setTimeout(function(){$('nav#access').addClass('is-mobile-hidden');}, 300);
+    $('nav#access').removeClass('open-menu');
+    setTimeout(function(){$('nav#access').addClass('is-mobile-hidden');}, 300);
+    $('.overlay').removeClass('nav-down');
   });
 });

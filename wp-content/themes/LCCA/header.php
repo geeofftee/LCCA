@@ -71,6 +71,7 @@
 ?>
 </head>
 <body <?php body_class(); ?>>
+	<div class="overlay"></div>
 	<header class="row">
 		<div class="twelve column mobile-four">
 			<div class="border">
