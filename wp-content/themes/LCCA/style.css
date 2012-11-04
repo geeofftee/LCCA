@@ -191,6 +191,12 @@ h3 {
   line-height:1.5em;
   margin: 1.5em 0;
 }
+.about h2 {
+  margin-bottom: 0;
+}
+.about ul {
+  margin-top: 1.5em;
+}
 .small {
   font-size: 0.813em;
   line-height: 1.385em;
